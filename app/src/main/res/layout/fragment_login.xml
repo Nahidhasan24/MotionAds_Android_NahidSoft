@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#D5000000"
     android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="620dp"
+        android:layout_height="450dp"
         android:layout_centerInParent="true"
         app:cardCornerRadius="20sp"
         android:backgroundTint="#81472D"
@@ -26,7 +26,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sign Up"
+                    android:text="Sign In"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:layout_marginTop="20dp"
@@ -34,21 +34,7 @@
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
 
-                <EditText
-                    android:inputType="text"
-                    android:id="@+id/nameInput"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="20sp"
-                    android:layout_marginEnd="20sp"
-                    android:background="@drawable/edittextbg"
-                    android:layout_marginTop="20dp"
-                    android:hint="Name"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white"
-                    android:paddingStart="10dp"
-                    android:maxLines="1"
-                    />
+
                 <EditText
                     android:inputType="text"
                     android:id="@+id/usernameInput"
@@ -64,36 +50,7 @@
                     android:paddingStart="10dp"
                     android:maxLines="1"
                     />
-                <EditText
-                    android:inputType="textEmailAddress"
-                    android:id="@+id/mailInput"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="20sp"
-                    android:layout_marginEnd="20sp"
-                    android:background="@drawable/edittextbg"
-                    android:layout_marginTop="20dp"
-                    android:hint="Email"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white"
-                    android:paddingStart="10dp"
-                    android:maxLines="1"
-                    />
-                <EditText
-                    android:inputType="number"
-                    android:id="@+id/numberInput"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="20sp"
-                    android:layout_marginEnd="20sp"
-                    android:background="@drawable/edittextbg"
-                    android:layout_marginTop="20dp"
-                    android:hint="Number"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white"
-                    android:paddingStart="10dp"
-                    android:maxLines="1"
-                    />
+
                 <EditText
                     android:inputType="textPassword"
                     android:id="@+id/passwordInput"
@@ -109,21 +66,19 @@
                     android:paddingStart="10dp"
                     android:maxLines="1"
                     />
-                <EditText
-                    android:inputType="textPassword"
-                    android:id="@+id/confirmPasswordInput"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="20sp"
+                <TextView
+                    android:id="@+id/forgetPassword"
+                    android:layout_gravity="end"
+                    android:gravity="end"
                     android:layout_marginEnd="20sp"
-                    android:background="@drawable/edittextbg"
-                    android:layout_marginTop="20dp"
-                    android:hint="Confirm Password"
+                    android:layout_marginTop="20sp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
                     android:textColor="@color/white"
-                    android:textColorHint="@color/white"
-                    android:paddingStart="10dp"
-                    android:maxLines="1"
-                    />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password ? "/>
+
 
                 <LinearLayout
                     android:layout_marginTop="20sp"
@@ -133,11 +88,11 @@
                     android:layout_gravity="center"
                     android:gravity="center">
                     <Button
-                        android:id="@+id/signupBtn"
+                        android:id="@+id/signInBtn"
                         android:layout_width="121dp"
                         android:layout_height="44dp"
                         android:background="@drawable/button_bg"
-                        android:text="Sign Up"
+                        android:text="Sign In"
                         android:textColor="@color/white"/>
                 </LinearLayout>
 
@@ -153,16 +108,16 @@
                         android:textSize="20sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Have an Account ?"/>
+                        android:text="Are you new here ?"/>
 
                     <TextView
-                        android:id="@+id/sendLoginBtn"
+                        android:id="@+id/sendRegisterBtn"
                         android:layout_marginStart="10dp"
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Sign In"
+                        android:text="Sign Up"
                         android:textColor="#FF5001"
                         android:layout_marginEnd="20sp"/>
                 </LinearLayout>
@@ -172,5 +127,10 @@
             </LinearLayout>
         </ScrollView>
     </androidx.cardview.widget.CardView>
+
+
+
+
+
 
 </RelativeLayout>
