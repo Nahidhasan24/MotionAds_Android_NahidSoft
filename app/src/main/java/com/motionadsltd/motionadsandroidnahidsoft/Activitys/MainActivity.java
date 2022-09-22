@@ -1,16 +1,15 @@
-package com.motionadsltd.motionadsandroidnahidsoft;
+package com.motionadsltd.motionadsandroidnahidsoft.Activitys;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+import com.motionadsltd.motionadsandroidnahidsoft.Fragments.HomeFragment;
+import com.motionadsltd.motionadsandroidnahidsoft.R;
 import com.motionadsltd.motionadsandroidnahidsoft.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        binding.bottomBar.add(new MeowBottomNavigation.Model(1,R.drawable.ic_baseline_home_24));
+        binding.bottomBar.add(new MeowBottomNavigation.Model(1, R.drawable.ic_baseline_home_24));
         binding.bottomBar.add(new MeowBottomNavigation.Model(2,R.drawable.ic_baseline_groups_2_24));
         binding.bottomBar.add(new MeowBottomNavigation.Model(3,R.drawable.ic_baseline_history_24));
         binding.bottomBar.add(new MeowBottomNavigation.Model(4,R.drawable.ic_baseline_person_24));
