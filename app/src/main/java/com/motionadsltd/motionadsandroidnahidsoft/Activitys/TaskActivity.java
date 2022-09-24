@@ -19,5 +19,8 @@ public class TaskActivity extends AppCompatActivity {
         binding.scratchCardBtn.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),ScratchActivity.class));
         });
+        binding.SpinWheelBtn.setOnClickListener(v->{
+            startActivity(new Intent(getApplicationContext(),SpinActivity.class));
+        });
     }
 }
