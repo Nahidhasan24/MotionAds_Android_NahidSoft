@@ -22,5 +22,9 @@ public class TaskActivity extends AppCompatActivity {
         binding.SpinWheelBtn.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),SpinActivity.class));
         });
+        binding.quizGameBtn.setOnClickListener(v->{
+            startActivity(new Intent(getApplicationContext(),QuizActivity.class));
+        });
+
     }
 }
