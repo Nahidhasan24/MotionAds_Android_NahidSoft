@@ -14,14 +14,12 @@
         android:layout_above="@+id/bottom_bar"/>
 
     <com.etebarian.meowbottomnavigation.MeowBottomNavigation
-        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bottom_bar"
+        android:layout_alignParentBottom="true"
         app:mbn_backgroundBottomColor="@color/colorBG"
-        app:mbn_circleColor="@color/white"
-        app:mbn_countTextColor="@color/black"
-        app:mbn_selectedIconColor="@color/black"/>
+        app:mbn_selectedIconColor="@color/black" />
 
 
 
