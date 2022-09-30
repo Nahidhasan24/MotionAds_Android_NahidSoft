@@ -9,7 +9,9 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+import com.motionadsltd.motionadsandroidnahidsoft.Fragments.HistoryFragment;
 import com.motionadsltd.motionadsandroidnahidsoft.Fragments.HomeFragment;
+import com.motionadsltd.motionadsandroidnahidsoft.Fragments.ProfileFragment;
 import com.motionadsltd.motionadsandroidnahidsoft.R;
 import com.motionadsltd.motionadsandroidnahidsoft.databinding.ActivityMainBinding;
 
@@ -31,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
                 } else if (item.getId() == 3) {
                     startActivity(new Intent(getApplicationContext(), AddMoneyActivity.class));
                     finish();
+                }else if (item.getId()==4){
+                    replaceFragment(new HistoryFragment());
+                }else if (item.getId()==5){
+                    replaceFragment(new ProfileFragment());
                 }
             }
         });

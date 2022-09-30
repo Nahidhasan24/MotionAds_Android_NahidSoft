@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.motionadsltd.motionadsandroidnahidsoft.Activitys.MoreActivity;
 import com.motionadsltd.motionadsandroidnahidsoft.Activitys.TaskActivity;
 import com.motionadsltd.motionadsandroidnahidsoft.Adapters.SliderImageAdapter;
 import com.motionadsltd.motionadsandroidnahidsoft.Models.SliderItem;
@@ -36,7 +37,9 @@ public class HomeFragment extends Fragment {
         binding.workBtn.setOnClickListener(v->{
             startActivity(new Intent(getActivity(), TaskActivity.class));
         });
-
+        binding.more.setOnClickListener(v->{
+            startActivity(new Intent(getActivity(), MoreActivity.class));
+        });
 
         return binding.getRoot();
     }

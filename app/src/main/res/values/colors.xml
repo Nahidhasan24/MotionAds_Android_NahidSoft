@@ -10,4 +10,5 @@
 
     <color name="defultColor">#fb6634</color>
     <color name="colorBG">#171717</color>
+    <color name="_bg__profile_color">#ffffff</color>
 </resources>
