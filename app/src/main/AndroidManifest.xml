@@ -22,18 +22,21 @@
             android:exported="false" />
         <activity
             android:name=".Activitys.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activitys.WithdrawActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activitys.RegisterActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activitys.WithdrawActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.RegisterActivity"
+            android:exported="false">
+
+
         </activity>
         <activity
             android:name=".Activitys.QuizActivity"
@@ -52,11 +55,17 @@
             android:exported="false" />
         <activity
             android:name=".Activitys.MainActivity"
-            android:exported="false" />
+            android:exported="false" >
+
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ocr" />
+
     </application>
 
 </manifest>
