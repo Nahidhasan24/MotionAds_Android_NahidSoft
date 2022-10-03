@@ -8,7 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="defultColor">#fb6634</color>
+    <color name="defultColor">#00BCD4</color>
     <color name="colorBG">#171717</color>
     <color name="_bg__profile_color">#ffffff</color>
 </resources>
