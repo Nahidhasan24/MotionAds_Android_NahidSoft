@@ -37,12 +37,12 @@ public class HomeFragment extends Fragment {
 //        getActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 //                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         loadSliderImage();
-        binding.workBtn.setOnClickListener(v->{
-            startActivity(new Intent(getActivity(), TaskActivity.class));
-        });
-        binding.more.setOnClickListener(v->{
-            startActivity(new Intent(getActivity(), MoreActivity.class));
-        });
+//        binding.workBtn.setOnClickListener(v->{
+//            startActivity(new Intent(getActivity(), TaskActivity.class));
+//        });
+//        binding.more.setOnClickListener(v->{
+//            startActivity(new Intent(getActivity(), MoreActivity.class));
+//        });
 
         return binding.getRoot();
     }
