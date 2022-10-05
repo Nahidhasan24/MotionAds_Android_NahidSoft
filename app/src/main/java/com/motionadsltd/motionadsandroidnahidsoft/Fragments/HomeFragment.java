@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 
 import com.motionadsltd.motionadsandroidnahidsoft.Activitys.MoreActivity;
 import com.motionadsltd.motionadsandroidnahidsoft.Activitys.TaskActivity;
@@ -33,6 +34,8 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding=FragmentHomeBinding.inflate(inflater,container,false);
+//        getActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         loadSliderImage();
         binding.workBtn.setOnClickListener(v->{
             startActivity(new Intent(getActivity(), TaskActivity.class));
