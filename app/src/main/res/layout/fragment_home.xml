@@ -103,7 +103,7 @@
                     android:layout_height="match_parent"
                     >
                     <androidx.cardview.widget.CardView
-                        android:backgroundTint="#fb6634"
+                        android:backgroundTint="#00BCD4"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
                         android:layout_width="match_parent"
@@ -159,7 +159,7 @@
                     android:layout_height="match_parent"
                     >
                     <androidx.cardview.widget.CardView
-                        android:backgroundTint="#fb6634"
+                        android:backgroundTint="#00BCD4"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
                         android:layout_width="match_parent"
@@ -226,7 +226,7 @@
                     android:layout_height="match_parent"
                     >
                     <androidx.cardview.widget.CardView
-                        android:backgroundTint="#fb6634"
+                        android:backgroundTint="#00BCD4"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
                         android:layout_width="match_parent"
@@ -282,7 +282,7 @@
                     android:layout_height="match_parent"
                     >
                     <androidx.cardview.widget.CardView
-                        android:backgroundTint="#fb6634"
+                        android:backgroundTint="#00BCD4"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
                         android:layout_width="match_parent"
@@ -348,7 +348,7 @@
                     android:layout_height="match_parent"
                     >
                     <androidx.cardview.widget.CardView
-                        android:backgroundTint="#fb6634"
+                        android:backgroundTint="#00BCD4"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
                         android:layout_width="match_parent"
@@ -404,7 +404,7 @@
                     android:layout_height="match_parent"
                     >
                     <androidx.cardview.widget.CardView
-                        android:backgroundTint="#fb6634"
+                        android:backgroundTint="#00BCD4"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
                         android:layout_width="match_parent"
