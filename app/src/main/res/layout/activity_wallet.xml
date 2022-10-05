@@ -8,6 +8,7 @@
     android:background="@drawable/bgprofile"
     android:orientation="vertical"
     tools:context=".Activitys.WalletActivity">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -42,7 +43,6 @@
         </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>
-
     <LinearLayout
         android:background="@drawable/background_gradiant"
         android:layout_width="match_parent"
@@ -76,7 +76,6 @@
 
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_marginTop="20sp"
         android:layout_width="match_parent"
@@ -299,8 +298,5 @@
 
 
     </LinearLayout>
-
-
-
 
 </LinearLayout>
