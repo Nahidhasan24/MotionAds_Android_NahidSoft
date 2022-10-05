@@ -5,176 +5,178 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/bghome"
     tools:context=".Activitys.WithdrawActivity"
     >
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:background="@color/defultColor"
-        android:layout_height="60dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:weightSum="10"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight="7"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/aclonica"
-                android:gravity="start"
-                android:text="Withdraw"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/coinTV"
-                android:layout_width="0dp"
-                android:layout_weight="3"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/aclonica"
-                android:gravity="start"
-                android:text="10 coin"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
-
-        </LinearLayout>
-
-    </androidx.appcompat.widget.Toolbar>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        app:cardCornerRadius="5dp"
-        android:layout_centerInParent="true"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="false"
+
         android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp">
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="5dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
-
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="withdraw"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:gravity="center"
-                android:orientation="vertical">
+                />
 
-                <TextView
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:hint="Number or Address"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/wd_mail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textSize="40sp"
-                    android:text="Withdraw"
-                    android:gravity="center"
-                    android:layout_marginTop="20dp"
-                    android:textColor="@color/black"
-                    />
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:hint="Amount"
+                app:endIconMode="clear_text">
 
-
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dw_point"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp"
-                    android:hint="Mail Address"
-                    app:endIconMode="clear_text">
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/wd_mail"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress" />
-                </com.google.android.material.textfield.TextInputLayout>
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp"
-                    android:hint="Point"
-                    app:endIconMode="clear_text">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/dw_point"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="number" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    >
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="match_parent" >
+                    android:layout_height="match_parent" >
 
 
-                        <RadioButton
-                            android:id="@+id/bkash"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Bkash" />
+                    <RadioButton
+                        android:id="@+id/bkash"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bkash"
+                        android:textColor="@color/white"
+                        android:background="@drawable/background_gradiant"/>
 
-                        <RadioButton
-                            android:id="@+id/nagad"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Nagad" />
+                    <RadioButton
+                        android:id="@+id/nagad"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nagad"
+                        android:textColor="@color/white"
+                        android:background="@drawable/background_gradiant"/>
 
-                        <RadioButton
-                            android:id="@+id/binance"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Binance" />
-
-                        <RadioButton
-                            android:id="@+id/usdt"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="USDT" />
-                    </RadioGroup>
-                </LinearLayout>
+                    <RadioButton
+                        android:id="@+id/binance"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="BNB"
+                        android:textColor="@color/white"
+                        android:background="@drawable/background_gradiant"/>
 
 
-                <Button
-                    android:id="@+id/withdrawBtn"
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="55dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginStart="10dp"
-                    android:text="withdraw"
-                    android:layout_marginEnd="10dp"/>
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent" >
 
 
+                    <RadioButton
+                        android:id="@+id/TRX"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TRX"
+                        android:textColor="@color/white"
+                        android:background="@drawable/background_gradiant"/>
 
+                    <RadioButton
+                        android:id="@+id/MAC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="$MAC Coin"
+                        android:textColor="@color/white"
+                        android:background="@drawable/background_gradiant"/>
 
+                    <RadioButton
+                        android:id="@+id/BTT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="BTT Coin"
+                        android:textColor="@color/white"
+                        android:background="@drawable/background_gradiant"/>
+
+                </RadioGroup>
             </LinearLayout>
 
-
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_gradiant"
+                android:text="Submit"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
         </LinearLayout>
 
+
+
     </androidx.cardview.widget.CardView>
+
+
 
 
 
