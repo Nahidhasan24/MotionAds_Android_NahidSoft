@@ -60,8 +60,6 @@ public class MainActivity extends AppCompatActivity {
     private void setBottomView() {
         binding.bottomBar.add(new MeowBottomNavigation.Model(1, R.drawable.ic_baseline_home_24));
         binding.bottomBar.add(new MeowBottomNavigation.Model(2, R.drawable.ic_baseline_groups_2_24));
-        binding.bottomBar.add(new MeowBottomNavigation.Model(3, R.drawable.addmoney));
-        binding.bottomBar.add(new MeowBottomNavigation.Model(4, R.drawable.ic_baseline_history_24));
         binding.bottomBar.add(new MeowBottomNavigation.Model(5, R.drawable.ic_baseline_person_24));
     }
 

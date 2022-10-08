@@ -62,6 +62,7 @@
 
 
                 <LinearLayout
+                    android:gravity="center"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_width="0dp"
@@ -72,8 +73,8 @@
                         android:backgroundTint="@android:color/transparent"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_width="130dp"
+                        android:layout_height="150dp">
                         <LinearLayout
                             android:background="@drawable/background_gradiant"
                             android:id="@+id/workBtn"
@@ -120,6 +121,7 @@
 
                 </LinearLayout>
                 <LinearLayout
+                    android:gravity="center"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_width="0dp"
@@ -130,8 +132,8 @@
                         android:backgroundTint="@android:color/transparent"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_width="130dp"
+                        android:layout_height="150dp">
                         <LinearLayout
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
@@ -188,6 +190,7 @@
 
 
                 <LinearLayout
+                    android:gravity="center"
                     android:id="@+id/earningCard"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
@@ -199,8 +202,8 @@
                         android:backgroundTint="@android:color/transparent"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_width="130dp"
+                        android:layout_height="150dp">
                         <LinearLayout
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
@@ -246,6 +249,7 @@
 
                 </LinearLayout>
                 <LinearLayout
+                    android:gravity="center"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_width="0dp"
@@ -256,8 +260,8 @@
                         android:backgroundTint="@android:color/transparent"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_width="130dp"
+                        android:layout_height="150dp">
                         <LinearLayout
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
@@ -266,7 +270,7 @@
                             <com.airbnb.lottie.LottieAnimationView
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
-                                app:lottie_rawRes="@raw/rank"
+                                app:lottie_rawRes="@raw/addmoney"
                                 app:lottie_autoPlay="true"
                                 app:lottie_loop="true"/>
                             <LinearLayout
@@ -288,7 +292,7 @@
                                         android:layout_gravity="center"
                                         android:gravity="center"
                                         android:layout_height="wrap_content"
-                                        android:text="Rank"
+                                        android:text="Add Money"
                                         android:fontFamily="@font/aclonica"
                                         android:textStyle="bold"
                                         android:textSize="18sp"/>
@@ -313,6 +317,7 @@
 
 
                 <LinearLayout
+                    android:gravity="center"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_width="0dp"
@@ -323,8 +328,8 @@
                         android:backgroundTint="@android:color/transparent"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_width="130dp"
+                        android:layout_height="150dp">
                         <LinearLayout
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
@@ -370,6 +375,7 @@
 
                 </LinearLayout>
                 <LinearLayout
+                    android:gravity="center"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_width="0dp"
@@ -380,8 +386,8 @@
                         android:backgroundTint="@android:color/transparent"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_width="130dp"
+                        android:layout_height="150dp">
                         <LinearLayout
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
@@ -390,7 +396,7 @@
                             <com.airbnb.lottie.LottieAnimationView
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
-                                app:lottie_rawRes="@raw/about"
+                                app:lottie_rawRes="@raw/scanner"
                                 app:lottie_autoPlay="true"
                                 app:lottie_loop="true"/>
                             <LinearLayout
@@ -413,7 +419,7 @@
                                         android:layout_gravity="center"
                                         android:fontFamily="@font/aclonica"
                                         android:gravity="center"
-                                        android:text="About"
+                                        android:text="Community"
                                         android:textColor="@color/white"
                                         android:textSize="18sp"
                                         android:textStyle="bold" />
@@ -438,6 +444,7 @@
 
 
                 <LinearLayout
+                    android:gravity="center"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_width="0dp"
@@ -448,8 +455,8 @@
                         android:backgroundTint="@android:color/transparent"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_width="130dp"
+                        android:layout_height="150dp">
                         <LinearLayout
                             android:background="@drawable/background_gradiant"
                             android:id="@+id/scannerBtn"
@@ -496,6 +503,7 @@
 
                 </LinearLayout>
                 <LinearLayout
+                    android:gravity="center"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_width="0dp"
@@ -506,8 +514,8 @@
                         android:backgroundTint="@android:color/transparent"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_width="130dp"
+                        android:layout_height="150dp">
                         <LinearLayout
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
@@ -517,7 +525,7 @@
                                 android:id="@+id/animationView"
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
-                                app:lottie_rawRes="@raw/news"
+                                app:lottie_rawRes="@raw/wallat"
                                 app:lottie_autoPlay="true"
                                 app:lottie_loop="true"/>
                             <LinearLayout
@@ -539,7 +547,7 @@
                                         android:layout_gravity="center"
                                         android:gravity="center"
                                         android:layout_height="wrap_content"
-                                        android:text="News"
+                                        android:text="Wallet"
                                         android:fontFamily="@font/aclonica"
                                         android:textStyle="bold"
                                         android:textSize="18sp"/>
@@ -564,6 +572,7 @@
 
 
                 <LinearLayout
+                    android:gravity="center"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_width="0dp"
@@ -574,8 +583,8 @@
                         android:backgroundTint="@android:color/transparent"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_width="130dp"
+                        android:layout_height="150dp">
                         <LinearLayout
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
@@ -584,7 +593,7 @@
                             <com.airbnb.lottie.LottieAnimationView
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
-                                app:lottie_rawRes="@raw/work"
+                                app:lottie_rawRes="@raw/tax"
                                 app:lottie_autoPlay="true"
                                 app:lottie_loop="true"/>
                             <LinearLayout
@@ -606,7 +615,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:gravity="center"
-                                        android:text="Earning"
+                                        android:text="Tax Calculator"
                                         android:fontFamily="@font/aclonica"
                                         android:textColor="@color/white"
                                         android:textSize="18sp"
@@ -621,6 +630,7 @@
 
                 </LinearLayout>
                 <LinearLayout
+                    android:gravity="center"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_width="0dp"
@@ -631,8 +641,8 @@
                         android:backgroundTint="@android:color/transparent"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_width="130dp"
+                        android:layout_height="150dp">
                         <LinearLayout
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
@@ -688,6 +698,7 @@
 
 
                 <LinearLayout
+                    android:gravity="center"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_width="0dp"
@@ -698,8 +709,8 @@
                         android:backgroundTint="@android:color/transparent"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_width="130dp"
+                        android:layout_height="150dp">
                         <LinearLayout
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
@@ -745,6 +756,7 @@
 
                 </LinearLayout>
                 <LinearLayout
+                    android:gravity="center"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_width="0dp"
@@ -755,8 +767,8 @@
                         android:backgroundTint="@android:color/transparent"
                         android:layout_margin="10dp"
                         app:cardCornerRadius="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_width="130dp"
+                        android:layout_height="150dp">
                         <LinearLayout
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
