@@ -43,6 +43,9 @@ public class HomeFragment extends Fragment {
 //        binding.more.setOnClickListener(v->{
 //            startActivity(new Intent(getActivity(), MoreActivity.class));
 //        });
+        binding.seeModeBtn.setOnClickListener(v->{
+            startActivity(new Intent(getActivity(),MoreActivity.class));
+        });
 
         return binding.getRoot();
     }

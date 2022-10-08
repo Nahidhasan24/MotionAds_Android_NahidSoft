@@ -6,9 +6,8 @@
     android:layout_width="match_parent"
     android:background="@drawable/bghome"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-
+    android:orientation="vertical"
+    >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -18,7 +17,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
            <androidx.cardview.widget.CardView
                android:layout_width="match_parent"
                android:layout_height="180dp"
@@ -53,7 +51,6 @@
 
 
            </androidx.cardview.widget.CardView>
-
           <RelativeLayout
               android:layout_width="match_parent"
               android:layout_height="60dp">
@@ -71,6 +68,7 @@
                   android:textStyle="bold" />
 
               <LinearLayout
+                  android:id="@+id/seeModeBtn"
                   android:layout_width="100dp"
                   android:layout_height="35dp"
                   android:layout_alignParentEnd="true"
@@ -94,7 +92,6 @@
 
 
           </RelativeLayout>
-
 
             <LinearLayout
                 android:layout_marginTop="15dp"

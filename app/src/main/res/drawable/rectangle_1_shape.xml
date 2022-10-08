@@ -3,6 +3,9 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
 	android:shape="rectangle" >
 	<solid android:color="@color/_bg__profile_color" />
-	<gradient android:angle="270" android:type="linear" android:startColor="#ff382840" android:endColor="#ff1c969e" />
+	<gradient android:angle="270"
+		android:type="linear"
+		android:startColor="#ff382840"
+		android:endColor="#ff1c969e" />
 </shape>
 
