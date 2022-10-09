@@ -59,7 +59,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="BTT coin"
+            android:text="MAC Coin"
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:gravity="center"
@@ -229,7 +229,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="MAC"
+                    android:text="$MAC"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:textSize="18sp"
@@ -291,5 +291,67 @@
 
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/WithdrawBtn"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0sp"
+            android:background="@drawable/background_gradiant"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Withdraw"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/HistoryBtn"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20sp"
+            android:background="@drawable/background_gradiant"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="History"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
 
 </LinearLayout>

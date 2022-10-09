@@ -22,5 +22,8 @@ public class MoreActivity extends AppCompatActivity {
         binding.addMoneyBtn.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),AddMoneyActivity.class));
         });
+        binding.walletBtn.setOnClickListener(v->{
+            startActivity(new Intent(getApplicationContext(),WalletActivity.class));
+        });
     }
 }

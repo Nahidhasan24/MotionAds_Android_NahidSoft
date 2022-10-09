@@ -4,12 +4,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/rectangle_1_shape"
+    android:background="@drawable/bgprofile"
     android:layout_height="match_parent">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:background="@color/defultColor"
+        android:background="@drawable/background_gradiant"
         android:layout_height="60dp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,7 +22,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="7"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="serif"
                 android:gravity="start"
                 android:text="Profile"
                 android:textColor="@color/white"
@@ -33,11 +33,11 @@
                 android:layout_width="0dp"
                 android:layout_weight="3"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="serif"
                 android:gravity="start"
                 android:text="Status : Free"
                 android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -57,11 +57,11 @@
                 android:layout_height="300dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:background="@drawable/rectangle_49">
+                >
 
                 <LinearLayout
                     android:layout_margin="20sp"
-                    android:background="@drawable/newbg"
+                    android:background="@drawable/coustom_colour"
                     android:layout_width="250dp"
                     android:layout_height="250dp"
                     android:orientation="vertical">
@@ -76,11 +76,21 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="User Name"
+                        android:text="Full Name"
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:textSize="20sp"
                         android:textStyle="bold"
+                        android:fontFamily="@font/aclonica"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="User Name"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="16sp"
                         android:fontFamily="@font/aclonica"
                         android:textColor="@color/white"/>
                     <TextView
@@ -97,7 +107,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="+012345678910"
+                        android:text="+8801810-327532"
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:textSize="16sp"

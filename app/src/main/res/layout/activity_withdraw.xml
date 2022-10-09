@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:layout_alignParentTop="false"
-
+        android:backgroundTint="@android:color/transparent"
         android:layout_marginStart="30dp"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="30dp"
@@ -23,12 +23,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/background_gradiant">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="withdraw"
+                android:text="Withdraw"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
