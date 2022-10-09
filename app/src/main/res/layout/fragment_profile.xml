@@ -61,7 +61,6 @@
 
                 <LinearLayout
                     android:layout_margin="10sp"
-                    android:background="@drawable/coustom_colour"
                     android:layout_width="270dp"
                     android:layout_height="250dp"
                     android:orientation="vertical">
