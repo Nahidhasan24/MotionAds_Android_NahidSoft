@@ -22,16 +22,6 @@ public class ProfileFragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        binding=FragmentProfileBinding.inflate(inflater,container,false);
-
-        binding.walletBtn.setOnClickListener(v->{
-            startActivity(new Intent(getActivity(), WalletActivity.class));
-        });
 
 
-        return binding.getRoot();
-    }
 }
