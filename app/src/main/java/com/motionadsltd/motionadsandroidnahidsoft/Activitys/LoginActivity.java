@@ -4,8 +4,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -30,23 +33,24 @@ public class LoginActivity extends AppCompatActivity {
 
     ActivityLoginBinding binding;
     ProgressDialog progressDialog;
+    int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        progressDialog=new ProgressDialog(LoginActivity.this);
+        progressDialog = new ProgressDialog(LoginActivity.this);
         progressDialog.setTitle("Loading...");
         progressDialog.setCancelable(false);
-        
+
         Paper.init(getApplicationContext());
         if (Paper.book().read(Const.ID) != null) {
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
             finish();
         }
-        binding.sendRegisterBtn.setOnClickListener(v->{
-            startActivity(new Intent(getApplicationContext(),RegisterActivity.class));
+        binding.sendRegisterBtn.setOnClickListener(v -> {
+            startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
         });
         binding.signInBtn.setOnClickListener(v -> {
             String name, pass;
@@ -87,19 +91,11 @@ public class LoginActivity extends AppCompatActivity {
                                     balance = mainObject.getString("used");
                                     id = mainObject.getInt("motion_ad_user_id");
 
+
                                     //putting data on offline database
-                                    Paper.book().write(Const.ID, id);
-                                    Paper.book().write(Const.USER_NAME, name);
-                                    Paper.book().write(Const.USER_MAIL, mail);
-                                    Paper.book().write(Const.USER_NUMBER, phone);
-                                    Paper.book().write(Const.USER_ACCOUNT_TYPE, type);
-                                    Paper.book().write(Const.USER_REFER_CODE, referCode);
+                                    lunchPage(id, name, mail, phone, type, referCode);
+                                    return;
 
-                                    Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
-
-                                    //passing main page
-                                    startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                                    finish();
 
                                 } else {
                                     progressDialog.dismiss();
@@ -139,5 +135,23 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    private void lunchPage(int id, String name, String mail, String phone, String type, String referCode) {
+
+        i++;
+        Log.d("MyTag", "lunchPage: "+i);
+        Paper.book().write(Const.ID, id);
+        Paper.book().write(Const.USER_NAME, name);
+        Paper.book().write(Const.USER_MAIL, mail);
+        Paper.book().write(Const.USER_NUMBER, phone);
+        Paper.book().write(Const.USER_ACCOUNT_TYPE, type);
+        Paper.book().write(Const.USER_REFER_CODE, referCode);
+
+        Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
+
+        //passing main page
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        finish();
     }
 }

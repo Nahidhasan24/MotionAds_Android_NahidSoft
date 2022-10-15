@@ -26,4 +26,10 @@ public class MoreActivity extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(),WalletActivity.class));
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+        finish();
+    }
 }

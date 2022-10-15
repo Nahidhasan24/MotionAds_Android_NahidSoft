@@ -9,7 +9,6 @@
 
     android:startColor="#00ffff"
         android:endColor="#000000"
-        android:angle="100"
 
         />
 

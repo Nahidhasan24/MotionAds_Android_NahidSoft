@@ -50,6 +50,8 @@ public class HomeFragment extends Fragment {
         return binding.getRoot();
     }
 
+
+
     private void loadSliderImage() {
         slideModelArrayList.add(new SliderItem("https://firebasestorage.googleapis.com/v0/b/crypto-coin-mine.appspot.com/o/images%2FCAR%20GAME-320x100-px.png?alt=media&token=ca9ea7e6-c6b3-4b2e-bbf5-20c26d68695b",""));
         slideModelArrayList.add(new SliderItem("https://image.shutterstock.com/image-vector/important-notice-sign-on-white-260nw-2065743164.jpg",""));
