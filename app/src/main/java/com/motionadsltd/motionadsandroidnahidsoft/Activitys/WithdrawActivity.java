@@ -32,7 +32,6 @@ public class WithdrawActivity extends AppCompatActivity {
     String address,amount,id,balance;
     int point;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,10 +59,7 @@ public class WithdrawActivity extends AppCompatActivity {
 
         });
 
-
-
     }
-
     private void getDataFromApi() {
         RequestQueue queue = Volley.newRequestQueue(this);
         StringRequest request=new StringRequest(Request.Method.POST, Const.BASE_URL + "getProfile", new Response.Listener<String>() {

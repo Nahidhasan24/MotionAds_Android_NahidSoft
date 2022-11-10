@@ -1,16 +1,17 @@
 package com.motionadsltd.motionadsandroidnahidsoft.Models;
 
 public class QuizModel {
-    private String tittle,opOne,opTwo,opThree,opFour;
-    int result;
+    private String tittle,opOne,opTwo,opThree,opFour,result;
+    int id;
 
-    public QuizModel(String tittle, String opOne, String opTwo, String opThree, String opFour, int result) {
+    public QuizModel(String tittle, String opOne, String opTwo, String opThree, String opFour, String result, int id) {
         this.tittle = tittle;
         this.opOne = opOne;
         this.opTwo = opTwo;
         this.opThree = opThree;
         this.opFour = opFour;
         this.result = result;
+        this.id = id;
     }
 
     public String getTittle() {
@@ -53,11 +54,19 @@ public class QuizModel {
         this.opFour = opFour;
     }
 
-    public int getResult() {
+    public String getResult() {
         return result;
     }
 
-    public void setResult(int result) {
+    public void setResult(String result) {
         this.result = result;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
