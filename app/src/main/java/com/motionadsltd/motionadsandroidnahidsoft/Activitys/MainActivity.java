@@ -1,17 +1,16 @@
 package com.motionadsltd.motionadsandroidnahidsoft.Activitys;
 
+import android.content.Intent;
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
-import android.os.Bundle;
-
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.motionadsltd.motionadsandroidnahidsoft.Fragments.HistoryFragment;
 import com.motionadsltd.motionadsandroidnahidsoft.Fragments.HomeFragment;
-import com.motionadsltd.motionadsandroidnahidsoft.Fragments.ProfileFragment;
 import com.motionadsltd.motionadsandroidnahidsoft.R;
 import com.motionadsltd.motionadsandroidnahidsoft.databinding.ActivityMainBinding;
 

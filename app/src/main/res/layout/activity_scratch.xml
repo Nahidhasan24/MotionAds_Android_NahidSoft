@@ -5,12 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activitys.ScratchActivity">
+    tools:context=".Activitys.ScratchActivity"
+    android:background="@drawable/shapetow">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:background="@color/defultColor"
-        android:layout_height="60dp">
+        android:layout_height="60dp"
+        android:background="@drawable/background_gradiant">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -2,19 +2,16 @@ package com.motionadsltd.motionadsandroidnahidsoft.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 
+import androidx.fragment.app.Fragment;
+
+import com.motionadsltd.motionadsandroidnahidsoft.Activitys.ActivityCourse;
 import com.motionadsltd.motionadsandroidnahidsoft.Activitys.MoreActivity;
-import com.motionadsltd.motionadsandroidnahidsoft.Activitys.TaskActivity;
 import com.motionadsltd.motionadsandroidnahidsoft.Adapters.SliderImageAdapter;
 import com.motionadsltd.motionadsandroidnahidsoft.Models.SliderItem;
-import com.motionadsltd.motionadsandroidnahidsoft.R;
 import com.motionadsltd.motionadsandroidnahidsoft.databinding.FragmentHomeBinding;
 
 import java.util.ArrayList;
@@ -24,6 +21,7 @@ public class HomeFragment extends Fragment {
     FragmentHomeBinding binding;
     ArrayList<SliderItem> slideModelArrayList=new ArrayList<>();
     SliderImageAdapter sliderImageAdapter;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +31,7 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         binding=FragmentHomeBinding.inflate(inflater,container,false);
 //        getActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 //                WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -46,8 +45,16 @@ public class HomeFragment extends Fragment {
         binding.seeModeBtn.setOnClickListener(v->{
             startActivity(new Intent(getActivity(),MoreActivity.class));
         });
+        binding.Courses.setOnClickListener(v->{
+            startActivity(new Intent(getActivity(), ActivityCourse.class));
+        });
+
+
+
 
         return binding.getRoot();
+
+
     }
 
 

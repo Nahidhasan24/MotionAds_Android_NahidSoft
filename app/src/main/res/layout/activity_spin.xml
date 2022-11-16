@@ -5,12 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activitys.SpinActivity">
+    tools:context=".Activitys.SpinActivity"
+    android:background="@drawable/background_gradiant">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:background="@color/defultColor"
-        android:layout_height="60dp">
+        android:layout_height="60dp"
+        android:background="@drawable/background_gradiant">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -30,21 +33,22 @@
         </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>
+
     <com.bluehomestudio.luckywheel.LuckyWheel
         android:id="@+id/lwv"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_centerInParent="true"
-        />
+        android:layout_centerInParent="true" />
 
     <Button
         android:id="@+id/spin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="spin"
         android:layout_below="@id/lwv"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginTop="30dp"/>
+        android:text="spin"
+        android:background="@drawable/background_gradiant"/>
 
 </RelativeLayout>

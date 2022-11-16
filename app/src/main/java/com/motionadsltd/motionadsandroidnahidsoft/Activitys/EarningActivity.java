@@ -15,13 +15,13 @@ public class EarningActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityEarningBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        binding.spinBtn.setOnClickListener(v->{
+        binding.SpinBtn.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),SpinActivity.class));
         });
-        binding.quizBtn.setOnClickListener(v->{
+        binding.QuizBtn.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),QuizActivity.class));
         });
-        binding.webVisitBtn.setOnClickListener(v->{
+        binding.WebsitevisitBtn.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),WebVisiteActivity.class));
         });
 

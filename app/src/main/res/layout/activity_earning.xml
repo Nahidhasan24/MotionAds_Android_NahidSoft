@@ -62,7 +62,6 @@
 
 
                 <LinearLayout
-                    android:id="@+id/subscriberBtn"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:layout_marginStart="15dp"
@@ -124,7 +123,6 @@
 
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/webVisitBtn"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_width="0dp"
@@ -139,6 +137,7 @@
                         android:layout_width="130dp"
                         android:layout_height="150dp">
                         <LinearLayout
+                            android:id="@+id/WebsitevisitBtn"
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -193,7 +192,6 @@
 
 
                 <LinearLayout
-                    android:id="@+id/quizBtn"
                     android:gravity="center"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
@@ -208,6 +206,7 @@
                         android:layout_width="130dp"
                         android:layout_height="150dp">
                         <LinearLayout
+                            android:id="@+id/QuizBtn"
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -252,7 +251,6 @@
 
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/taskBtn"
                     android:gravity="center"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
@@ -322,46 +320,44 @@
 
 
                 <LinearLayout
-                    android:id="@+id/spinBtn"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:gravity="center"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
+                    android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:gravity="center">
-
+                    android:layout_height="match_parent"
+                    >
                     <androidx.cardview.widget.CardView
-                        android:layout_width="130dp"
-                        android:layout_height="150dp"
-                        android:layout_margin="10dp"
                         android:backgroundTint="@android:color/transparent"
-                        app:cardCornerRadius="10dp">
-
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_width="130dp"
+                        android:layout_height="150dp">
                         <LinearLayout
+                            android:id="@+id/SpinBtn"
+                            android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/background_gradiant"
                             android:orientation="vertical">
-
                             <com.airbnb.lottie.LottieAnimationView
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
+                                app:lottie_rawRes="@raw/wheel"
                                 app:lottie_autoPlay="true"
-                                app:lottie_loop="true"
-                                app:lottie_rawRes="@raw/wheel" />
-
+                                app:lottie_loop="true"/>
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:orientation="horizontal"
-                                android:weightSum="6">
+                                android:weightSum="6"
+                                android:orientation="horizontal">
 
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
-                                    android:gravity="center">
+                                    android:gravity="center"
+                                    >
 
                                     <TextView
                                         android:layout_width="match_parent"
@@ -382,9 +378,7 @@
 
 
                 </LinearLayout>
-
                 <LinearLayout
-                    android:id="@+id/watchBtn"
                     android:gravity="center"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
@@ -451,11 +445,10 @@
                 android:layout_height="170dp">
 
                 <LinearLayout
-                    android:id="@+id/commingSoonBtn"
+                    android:gravity="center"
                     android:layout_width="180dp"
                     android:layout_height="match_parent"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="center">
+                    android:layout_centerHorizontal="true">
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="130dp"

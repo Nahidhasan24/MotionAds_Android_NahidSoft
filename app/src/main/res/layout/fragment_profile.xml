@@ -57,13 +57,15 @@
                 android:layout_height="300dp"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:layout_marginTop="-10dp"
                 >
 
                 <LinearLayout
                     android:layout_margin="10sp"
                     android:layout_width="270dp"
                     android:layout_height="250dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@drawable/coustom_colour">
 
                     <ImageView
                         android:layout_marginTop="1dp"
