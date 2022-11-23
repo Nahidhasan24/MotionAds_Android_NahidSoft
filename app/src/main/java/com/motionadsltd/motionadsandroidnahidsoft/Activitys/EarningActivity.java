@@ -24,6 +24,9 @@ public class EarningActivity extends AppCompatActivity {
         binding.WebsitevisitBtn.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),WebVisiteActivity.class));
         });
+        binding.comingSoon.setOnClickListener(v->{
+            startActivity(new Intent(getApplicationContext(),ScratchActivity.class));
+        });
 
     }
 }

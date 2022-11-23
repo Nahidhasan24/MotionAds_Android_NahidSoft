@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bghome"
+    android:background="@drawable/bg10"
     tools:context=".Activitys.WithdrawActivity"
     >
 
@@ -16,7 +16,7 @@
         android:layout_alignParentTop="false"
         android:backgroundTint="@android:color/transparent"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="30dp"
         app:cardCornerRadius="5dp">
 
@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="@drawable/background_gradiant">
+            >
 
             <TextView
                 android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                 android:text="Withdraw"
                 android:textSize="30sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/_bg__profile_color"
                 android:gravity="center"
                 />
 
@@ -176,7 +176,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Submit"
+                    android:text="Withdraw"
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />

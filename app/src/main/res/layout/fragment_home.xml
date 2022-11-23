@@ -253,7 +253,7 @@
                         android:layout_height="150dp">
                         <LinearLayout
                             android:background="@drawable/background_gradiant"
-                            android:id="@+id/education"
+                            android:id="@+id/Education"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical">

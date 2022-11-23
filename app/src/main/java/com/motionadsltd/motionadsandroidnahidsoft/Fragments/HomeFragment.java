@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 
 import com.motionadsltd.motionadsandroidnahidsoft.Activitys.ActivityCourse;
+import com.motionadsltd.motionadsandroidnahidsoft.Activitys.EducationActivity;
 import com.motionadsltd.motionadsandroidnahidsoft.Activitys.MoreActivity;
 import com.motionadsltd.motionadsandroidnahidsoft.Adapters.SliderImageAdapter;
 import com.motionadsltd.motionadsandroidnahidsoft.Models.SliderItem;
@@ -45,11 +46,14 @@ public class HomeFragment extends Fragment {
         binding.seeModeBtn.setOnClickListener(v->{
             startActivity(new Intent(getActivity(),MoreActivity.class));
         });
+
+        binding.Education.setOnClickListener(v->{
+            startActivity(new Intent(getActivity(), EducationActivity.class));
+        });
+
         binding.Courses.setOnClickListener(v->{
             startActivity(new Intent(getActivity(), ActivityCourse.class));
         });
-
-
 
 
         return binding.getRoot();

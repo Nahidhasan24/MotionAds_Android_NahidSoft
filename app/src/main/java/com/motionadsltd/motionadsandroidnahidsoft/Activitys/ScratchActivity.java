@@ -10,6 +10,9 @@ import com.applovin.mediation.MaxAd;
 import com.applovin.mediation.MaxAdListener;
 import com.applovin.mediation.MaxError;
 import com.applovin.mediation.ads.MaxInterstitialAd;
+import com.applovin.sdk.AppLovinAd;
+import com.applovin.sdk.AppLovinSdk;
+import com.applovin.sdk.AppLovinSdkConfiguration;
 import com.motionadsltd.motionadsandroidnahidsoft.R;
 import com.motionadsltd.motionadsandroidnahidsoft.databinding.ActivityScratchBinding;
 
@@ -22,6 +25,16 @@ public class ScratchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityScratchBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        AppLovinSdk.getInstance(this).showMediationDebugger();
+        AppLovinSdk.initializeSdk(getApplicationContext(), new AppLovinSdk.SdkInitializationListener() {
+            @Override
+            public void onSdkInitialized(final AppLovinSdkConfiguration configuration)
+            {
+                // AppLovin SDK is initialized, start loading ads
+                //Toast.makeText(ScratchActivity.this, ""+configuration.getConsentDialogState(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(ScratchActivity.this, ""+configuration.toString(), Toast.LENGTH_SHORT).show();
+            }
+        } );
         createInterstitialAd();
         binding.scratchView.setRevealListener(new ScratchView.IRevealListener() {
             @Override
@@ -44,7 +57,6 @@ public class ScratchActivity extends AppCompatActivity {
             @Override
             public void onAdLoaded(MaxAd ad) {
                 
-                addCoin();
 
             }
 
@@ -55,6 +67,7 @@ public class ScratchActivity extends AppCompatActivity {
 
             @Override
             public void onAdHidden(MaxAd ad) {
+                addCoin();
 
             }
 
@@ -79,6 +92,7 @@ public class ScratchActivity extends AppCompatActivity {
     }
 
     private void addCoin() {
+        Toast.makeText(this, "Give Coin", Toast.LENGTH_SHORT).show();
     }
 
     private void loadAds() {

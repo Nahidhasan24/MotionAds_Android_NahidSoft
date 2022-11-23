@@ -17,8 +17,12 @@
         android:theme="@style/Theme.MotionAdsAndroidNahidSoft"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
         <activity
-            android:name=".course"
+            android:name=".Activitys.EducationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.ActivityCourse"
             android:exported="false" />
         <activity
             android:name=".Activitys.WebVisiteActivity"
