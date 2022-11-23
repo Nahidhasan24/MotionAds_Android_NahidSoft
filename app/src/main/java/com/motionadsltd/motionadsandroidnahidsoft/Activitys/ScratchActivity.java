@@ -1,19 +1,17 @@
 package com.motionadsltd.motionadsandroidnahidsoft.Activitys;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.anupkumarpanwar.scratchview.ScratchView;
 import com.applovin.mediation.MaxAd;
 import com.applovin.mediation.MaxAdListener;
 import com.applovin.mediation.MaxError;
 import com.applovin.mediation.ads.MaxInterstitialAd;
-import com.applovin.sdk.AppLovinAd;
 import com.applovin.sdk.AppLovinSdk;
 import com.applovin.sdk.AppLovinSdkConfiguration;
-import com.motionadsltd.motionadsandroidnahidsoft.R;
 import com.motionadsltd.motionadsandroidnahidsoft.databinding.ActivityScratchBinding;
 
 public class ScratchActivity extends AppCompatActivity {

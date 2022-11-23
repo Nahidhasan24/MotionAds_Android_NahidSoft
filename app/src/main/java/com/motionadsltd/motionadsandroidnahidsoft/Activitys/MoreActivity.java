@@ -1,11 +1,10 @@
 package com.motionadsltd.motionadsandroidnahidsoft.Activitys;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.motionadsltd.motionadsandroidnahidsoft.R;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.motionadsltd.motionadsandroidnahidsoft.databinding.ActivityMoreBinding;
 
 public class MoreActivity extends AppCompatActivity {
@@ -22,8 +21,12 @@ public class MoreActivity extends AppCompatActivity {
         binding.addMoneyBtn.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),AddMoneyActivity.class));
         });
+
         binding.walletBtn.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),WalletActivity.class));
+        });
+        binding.game.setOnClickListener(v->{
+            startActivity(new Intent(getApplicationContext(),GameActivity.class));
         });
     }
 
