@@ -78,7 +78,7 @@
                         android:layout_height="150dp">
                         <LinearLayout
                             android:background="@drawable/background_gradiant"
-                            android:id="@+id/workBtn"
+                            android:id="@+id/news"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
@@ -136,12 +136,12 @@
                         android:layout_width="130dp"
                         android:layout_height="150dp">
                         <LinearLayout
+                            android:id="@+id/scaner"
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
                             <com.airbnb.lottie.LottieAnimationView
-
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
                                 app:lottie_rawRes="@raw/scanertow"
@@ -333,6 +333,7 @@
                         android:layout_width="130dp"
                         android:layout_height="150dp">
                         <LinearLayout
+
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -460,8 +461,8 @@
                         android:layout_width="130dp"
                         android:layout_height="150dp">
                         <LinearLayout
+                            android:id="@+id/taxc"
                             android:background="@drawable/background_gradiant"
-                            android:id="@+id/scannerBtn"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
@@ -519,6 +520,7 @@
                         android:layout_width="130dp"
                         android:layout_height="150dp">
                         <LinearLayout
+                            android:id="@+id/community"
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -647,6 +649,7 @@
                         android:layout_width="130dp"
                         android:layout_height="150dp">
                         <LinearLayout
+                            android:id="@+id/rideshare"
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -716,6 +719,7 @@
                         android:layout_width="130dp"
                         android:layout_height="150dp">
                         <LinearLayout
+                            android:id="@+id/wheather"
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -901,6 +905,7 @@
                         android:layout_width="130dp"
                         android:layout_height="150dp">
                         <LinearLayout
+                            android:id="@+id/more2"
                             android:background="@drawable/background_gradiant"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"

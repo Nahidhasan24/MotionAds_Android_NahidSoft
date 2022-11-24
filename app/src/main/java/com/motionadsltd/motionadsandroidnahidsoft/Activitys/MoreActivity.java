@@ -18,6 +18,9 @@ public class MoreActivity extends AppCompatActivity {
         binding.earningCard.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),EarningActivity.class));
         });
+        binding.news.setOnClickListener(v->{
+            startActivity(new Intent(getApplicationContext(), ComingActivity.class));
+        });
         binding.addMoneyBtn.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),AddMoneyActivity.class));
         });
@@ -28,6 +31,28 @@ public class MoreActivity extends AppCompatActivity {
         binding.game.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),GameActivity.class));
         });
+
+        binding.scaner.setOnClickListener(v->{
+            startActivity(new Intent(getApplicationContext(), ComingActivity.class));
+        });
+        binding.taxc.setOnClickListener(v->{
+            startActivity(new Intent(getApplicationContext(), ComingActivity.class));
+        });
+        binding.community.setOnClickListener(v->{
+            startActivity(new Intent(getApplicationContext(), ComingActivity.class));
+        });
+        binding.rideshare.setOnClickListener(v->{
+            startActivity(new Intent(getApplicationContext(), ComingActivity.class));
+        });
+        binding.wheather.setOnClickListener(v->{
+            startActivity(new Intent(getApplicationContext(), ComingActivity.class));
+        });
+        binding.more2.setOnClickListener(v->{
+            startActivity(new Intent(getApplicationContext(), ComingActivity.class));
+        });
+
+
+
     }
 
     @Override

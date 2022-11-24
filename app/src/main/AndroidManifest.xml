@@ -17,6 +17,10 @@
         android:theme="@style/Theme.MotionAdsAndroidNahidSoft"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
+        <activity
+            android:name=".Activitys.ComingActivity"
+            android:exported="false" />
         <activity
             android:name=".Activitys.GameActivity"
             android:exported="false" />
