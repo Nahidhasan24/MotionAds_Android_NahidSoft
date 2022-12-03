@@ -88,6 +88,11 @@
         <meta-data
             android:name="applovin.sdk.key"
             android:value="ufiXOtloflU5za8m9VaInT0LZ0EoqJN4SzGkUzTDvyfxa--HBikDru1aEwDxNCTE4qXXwsdD9nbs94GvVp5Ags" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
     </application>
+
+
 
 </manifest>
