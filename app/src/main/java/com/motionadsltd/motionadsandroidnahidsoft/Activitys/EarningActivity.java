@@ -27,6 +27,10 @@ public class EarningActivity extends AppCompatActivity {
         binding.comingSoon.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),ScratchActivity.class));
         });
+        binding.webTask.setOnClickListener(v->{
+            startActivity(new Intent(getApplicationContext(),ScratchActivity.class));
+        });
+
 
     }
 }

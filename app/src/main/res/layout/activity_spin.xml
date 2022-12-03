@@ -7,7 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".Activitys.SpinActivity"
     android:background="@drawable/background_gradiant">
-
+    <com.google.android.gms.ads.AdView
+        android:layout_gravity="center"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_admob">
+    </com.google.android.gms.ads.AdView>
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"

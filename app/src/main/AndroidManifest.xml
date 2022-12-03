@@ -17,7 +17,9 @@
         android:theme="@style/Theme.MotionAdsAndroidNahidSoft"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
+        <activity
+            android:name=".WebTaskActivity"
+            android:exported="false" />
         <activity
             android:name=".Activitys.ComingActivity"
             android:exported="false" />
@@ -90,9 +92,7 @@
             android:value="ufiXOtloflU5za8m9VaInT0LZ0EoqJN4SzGkUzTDvyfxa--HBikDru1aEwDxNCTE4qXXwsdD9nbs94GvVp5Ags" />
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-3940256099942544~3347511713" />
     </application>
-
-
 
 </manifest>

@@ -12,6 +12,11 @@ import com.applovin.mediation.MaxError;
 import com.applovin.mediation.ads.MaxInterstitialAd;
 import com.applovin.sdk.AppLovinSdk;
 import com.applovin.sdk.AppLovinSdkConfiguration;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.motionadsltd.motionadsandroidnahidsoft.databinding.ActivityScratchBinding;
 
 public class ScratchActivity extends AppCompatActivity {
@@ -23,6 +28,7 @@ public class ScratchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityScratchBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        loadAdMob();
         AppLovinSdk.getInstance(this).showMediationDebugger();
         AppLovinSdk.initializeSdk(getApplicationContext(), new AppLovinSdk.SdkInitializationListener() {
             @Override
@@ -31,6 +37,7 @@ public class ScratchActivity extends AppCompatActivity {
                 // AppLovin SDK is initialized, start loading ads
                 //Toast.makeText(ScratchActivity.this, ""+configuration.getConsentDialogState(), Toast.LENGTH_SHORT).show();
                 //Toast.makeText(ScratchActivity.this, ""+configuration.toString(), Toast.LENGTH_SHORT).show();
+
             }
         } );
         createInterstitialAd();
@@ -48,6 +55,19 @@ public class ScratchActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void loadAdMob() {
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+                AdView adView = new AdView(ScratchActivity.this);
+                AdRequest adRequest = new AdRequest.Builder().build();
+                binding.adView.loadAd(adRequest);
+            }
+        });
+    }
+
     void createInterstitialAd()
     {
         interstitialAd = new MaxInterstitialAd( "99a193f4d13e19d8", this );
